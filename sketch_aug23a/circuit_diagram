@@ -1,0 +1,14 @@
+[12V POWER SUPPLY]
+  (+)-------------------------------------> To LED Strip 12V Pad
+  (-)---+---------------------------------> Main Ground Rail
+        |
+        +--- ESP32 GND Pin
+        |
+        +--- MOSFET 1 Source (Right Leg) -> Gate (Left) to ESP32 Pin 4
+        |      L--> Drain (Middle Leg) ---> To LED Strip R Pad (Red)
+        |
+        +--- MOSFET 2 Source (Right Leg) -> Gate (Left) to ESP32 Pin 5
+        |      L--> Drain (Middle Leg) ---> To LED Strip G Pad (Green)
+        |
+        +--- MOSFET 3 Source (Right Leg) -> Gate (Left) to ESP32 Pin 18
+               L--> Drain (Middle Leg) ---> To LED Strip B Pad (Blue)
